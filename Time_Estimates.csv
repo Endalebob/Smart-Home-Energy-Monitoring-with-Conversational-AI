@@ -9,11 +9,11 @@ ID,Task,Estimate (hours),Actual (hours),Status,Notes
 1.5,Admin user seeding,0.5,0.5,COMPLETED,Automatic admin creation on startup
 2.1,Device management service & routes,2.0,1.0,COMPLETED,CRUD operations for user devices
 2.2,Telemetry service & routes,3.0,2.0,COMPLETED,Ingestion, querying, aggregation endpoints
-2.3,Telemetry simulation script,1.5,,PENDING,Test data generation for 5 devices
-3.1,Conversational AI service setup,1.0,,PENDING,Define chat intent schema and response models
-3.2,Rules-based parser implementation,2.5,,PENDING,Natural language to query conversion
-3.3,LLM integration (optional),2.0,,PENDING,OpenAI integration for advanced queries
-3.4,Chat routes & endpoints,1.5,,PENDING,Query endpoint with structured responses
+2.3,Telemetry simulation script,0.5,0.5,COMPLETED,Test data generation for 5 devices
+3.1,Conversational AI service setup,1.0,,COMPLETED,Define chat intent schema and response models
+3.2,Rules-based parser implementation,2.5,,Skipped,Natural language to query conversion
+3.3,LLM integration (optional),2.0,3.0,COMPLETED,OpenAI integration for advanced queries
+3.4,Chat routes & endpoints,1.5,1,COMPLETED,Query endpoint with structured responses
 4.1,Error handling & validation,1.0,,PENDING,Global exception handlers, input validation
 4.2,API documentation & testing,1.5,,PENDING,OpenAPI docs verification, integration tests
 4.3,Performance optimization,1.0,,PENDING,Database indexes, query optimization
