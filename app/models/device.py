@@ -43,4 +43,16 @@ class DeviceResponse(DeviceBase):
     created_at: datetime
     
     class Config:
-        from_attributes = True 
+        from_attributes = True
+    
+    @classmethod
+    def from_orm(cls, obj):
+        return cls(
+            id=obj.id,
+            device_id=obj.device_id,
+            name=obj.name,
+            device_type=obj.device_type,
+            user_id=obj.user_id,
+            is_active=obj.is_active,
+            created_at=obj.created_at
+        ) 

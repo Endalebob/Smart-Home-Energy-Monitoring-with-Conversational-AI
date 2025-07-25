@@ -32,12 +32,27 @@ class TelemetryBase(BaseModel):
 class TelemetryCreate(TelemetryBase):
     pass
 
-class TelemetryResponse(TelemetryBase):
+class TelemetryResponse(BaseModel):
     id: int
+    device_id: str  # UUID string
+    timestamp: datetime
+    energy_watts: float
     created_at: datetime
     
     class Config:
         from_attributes = True
+    
+    @classmethod
+    def from_orm(cls, obj):
+        # Get the device UUID from the relationship
+        device_uuid = obj.device.device_id if obj.device else "unknown"
+        return cls(
+            id=obj.id,
+            device_id=device_uuid,
+            timestamp=obj.timestamp,
+            energy_watts=obj.energy_watts,
+            created_at=obj.created_at
+        )
 
 class TelemetryQuery(BaseModel):
     device_id: Optional[str] = None
