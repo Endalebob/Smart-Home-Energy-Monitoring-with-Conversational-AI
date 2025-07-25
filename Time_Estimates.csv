@@ -7,8 +7,8 @@ ID,Task,Estimate (hours),Actual (hours),Status,Notes
 1.3,Password hashing & JWT utilities,1.5,1.5,COMPLETED,bcrypt hashing, JWT token creation/verification
 1.4,Authentication service & routes,2.0,2.0,COMPLETED,Register, login, logout endpoints
 1.5,Admin user seeding,0.5,0.5,COMPLETED,Automatic admin creation on startup
-2.1,Device management service & routes,2.0,,PENDING,CRUD operations for user devices
-2.2,Telemetry service & routes,3.0,,PENDING,Ingestion, querying, aggregation endpoints
+2.1,Device management service & routes,2.0,1.0,COMPLETED,CRUD operations for user devices
+2.2,Telemetry service & routes,3.0,2.0,COMPLETED,Ingestion, querying, aggregation endpoints
 2.3,Telemetry simulation script,1.5,,PENDING,Test data generation for 5 devices
 3.1,Conversational AI service setup,1.0,,PENDING,Define chat intent schema and response models
 3.2,Rules-based parser implementation,2.5,,PENDING,Natural language to query conversion
@@ -20,4 +20,3 @@ ID,Task,Estimate (hours),Actual (hours),Status,Notes
 5.1,README & deployment docs,1.0,,PENDING,Setup instructions, API usage examples
 5.2,End-to-end testing,2.0,,PENDING,Complete workflow testing
 5.3,Final polish & cleanup,1.0,,PENDING,Code review, final adjustments
-TOTAL,25.5,15.0,,,Progress: 59% complete
