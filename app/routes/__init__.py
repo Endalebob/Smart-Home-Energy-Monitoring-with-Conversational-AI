@@ -1,4 +1,4 @@
 # Routes package
-from . import auth, telemetry, devices
+from . import auth, telemetry, devices, chat
 
-__all__ = ["auth", "telemetry", "devices"]
+__all__ = ["auth", "telemetry", "devices", "chat"]

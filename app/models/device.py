@@ -24,12 +24,11 @@ class Device(Base):
 
 # Pydantic models for API
 class DeviceBase(BaseModel):
-    device_id: str
     name: str
     device_type: str
 
 class DeviceCreate(DeviceBase):
-    pass
+    device_id: Optional[str] = None  # Optional, will be generated if not provided
 
 class DeviceUpdate(BaseModel):
     name: Optional[str] = None
@@ -38,6 +37,7 @@ class DeviceUpdate(BaseModel):
 
 class DeviceResponse(DeviceBase):
     id: int
+    device_id: str
     user_id: int
     is_active: bool
     created_at: datetime

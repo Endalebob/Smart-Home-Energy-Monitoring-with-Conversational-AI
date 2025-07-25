@@ -1,10 +1,11 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 import logging
 import os
 from app.utils.db import init_users_table, init_devices_table, init_telemetry_table, get_db_context
 from app.utils.seeder import seed_database
-from app.routes import auth, telemetry, devices
+from app.routes import auth, telemetry, devices, chat
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -59,6 +60,7 @@ app = FastAPI(
 app.include_router(auth.router)
 app.include_router(telemetry.router)
 app.include_router(devices.router)
+app.include_router(chat.router)
 
 @app.get("/")
 def read_root():
@@ -67,3 +69,14 @@ def read_root():
 @app.get("/health")
 def health_check():
     return {"status": "healthy"}
+
+
+# allow CORS from all origins
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+

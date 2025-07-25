@@ -13,8 +13,8 @@ class DeviceService:
     @staticmethod
     def create_device(db: Session, device_data: DeviceCreate, user_id: int) -> DeviceResponse:
         """Create a new device for a user"""
-        # Generate a unique device ID (UUID)
-        device_uuid = str(uuid.uuid4())
+        # Use provided device_id or generate a unique device ID (UUID)
+        device_uuid = device_data.device_id if device_data.device_id else str(uuid.uuid4())
         
         # Create device
         db_device = Device(
