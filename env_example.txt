@@ -1,0 +1,24 @@
+# Database Configuration
+POSTGRES_DB=smart_home
+POSTGRES_USER=user
+POSTGRES_PASSWORD=password
+DB_PORT=5432
+
+# Database URL for API
+DATABASE_URL=postgresql://user:password@db:5432/smart_home
+
+# JWT Configuration
+JWT_SECRET_KEY=rcyCL74mp+PKltTjbQ/Wc2W59HnSEIdLe/+QdEkgfU8=
+JWT_ALGORITHM=HS256
+JWT_ACCESS_TOKEN_EXPIRE_MINUTES=300
+
+# API Configuration
+API_PORT=8000
+API_HOST=0.0.0.0
+DEBUG=false
+
+
+OPENAI_API_KEY=set OPENAI API KEY
+
+# Frontend Configuration
+FRONTEND_PORT=3000
