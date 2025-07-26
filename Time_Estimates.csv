@@ -14,8 +14,8 @@ ID,Task,Estimate (hours),Actual (hours),Status,Notes
 3.2,Rules-based parser implementation,2.5,,Skipped,Natural language to query conversion
 3.3,LLM integration (optional),2.0,3.0,COMPLETED,OpenAI integration for advanced queries
 3.4,Chat routes & endpoints,1.5,1,COMPLETED,Query endpoint with structured responses
-4.1,Error handling & validation,1.0,,PENDING,Global exception handlers, input validation
-4.2,API documentation & testing,1.5,,PENDING,OpenAPI docs verification, integration tests
+4.1,Error handling & validation,1.0,0.5,COMPLETED,Global exception handlers, input validation
+4.2,API documentation & testing,1.5,2.5,COMPLETED,OpenAPI docs verification, integration tests
 4.3,Performance optimization,1.0,,PENDING,Database indexes, query optimization
 5.1,README & deployment docs,1.0,,PENDING,Setup instructions, API usage examples
 5.2,End-to-end testing,2.0,,PENDING,Complete workflow testing
