@@ -16,7 +16,7 @@ ID,Task,Estimate (hours),Actual (hours),Status,Notes
 3.4,Chat routes & endpoints,1.5,1,COMPLETED,Query endpoint with structured responses
 4.1,Error handling & validation,1.0,0.5,COMPLETED,Global exception handlers, input validation
 4.2,API documentation & testing,1.5,2.5,COMPLETED,OpenAPI docs verification, integration tests
-4.3,Performance optimization,1.0,,PENDING,Database indexes, query optimization
+4.3,Performance optimization,1.0,,skipped,Database indexes, query optimization
 5.1,README & deployment docs,1.0,1.0,COMPLETED,Setup instructions, API usage examples
 5.2,End-to-end testing,2.0,1.0,COMPLETED,Complete workflow testing
-5.3,Final polish & cleanup,1.0,,PENDING,Code review, final adjustments
+5.3,Final polish & cleanup,1.0,1.5,COMPLETED,Code review, final adjustments
