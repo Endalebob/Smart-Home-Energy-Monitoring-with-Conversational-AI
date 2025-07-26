@@ -28,6 +28,7 @@ docker-compose up --build
 
 ### 4. Access the Application
 - **Backend API (FastAPI):** [http://localhost:8000](http://localhost:8000)
+- **API Docs:** [http://localhost:8000/redoc](http://localhost:8000/redoc)
 - **API Docs:** [http://localhost:8000/docs](http://localhost:8000/docs)
 - **Frontend (Next.js):** [http://localhost:3000](http://localhost:3000)
 
