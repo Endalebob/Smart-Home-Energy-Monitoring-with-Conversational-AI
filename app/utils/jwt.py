@@ -7,11 +7,13 @@ from sqlalchemy.orm import Session
 import os
 from app.utils.db import get_db
 from app.models.user import User
+from dotenv import load_dotenv
+load_dotenv()
 
 # JWT Configuration
 SECRET_KEY = os.getenv("JWT_SECRET_KEY", "your-secret-key")
 ALGORITHM = os.getenv("JWT_ALGORITHM", "HS256")
-ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("JWT_ACCESS_TOKEN_EXPIRE_MINUTES", "30"))
+ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("JWT_ACCESS_TOKEN_EXPIRE_MINUTES", "300"))
 
 # Security scheme
 security = HTTPBearer()

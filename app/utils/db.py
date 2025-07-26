@@ -3,6 +3,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 import os
 from contextlib import contextmanager
+from dotenv import load_dotenv
+load_dotenv()
 
 # Database configuration
 DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://user:password@localhost:5432/smart_home")

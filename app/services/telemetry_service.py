@@ -183,7 +183,7 @@ class TelemetryService:
     def get_top_consuming_devices(
         db: Session,
         user_id: int,
-        limit: int = 5,
+        limit: int = 3,
         start_time: Optional[datetime] = None,
         end_time: Optional[datetime] = None
     ) -> List[Dict[str, Any]]:
