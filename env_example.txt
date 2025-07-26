@@ -18,7 +18,7 @@ API_HOST=0.0.0.0
 DEBUG=false
 
 
-OPENAI_API_KEY=set OPENAI API KEY
+OPENAI_API_KEY=
 
 # Frontend Configuration
 FRONTEND_PORT=3000

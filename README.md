@@ -9,7 +9,7 @@ A full-stack application for monitoring smart home energy usage, featuring a con
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/Endalebob/Smart-Home-Energy-Monitoring-with-Conversational-AI.git
-cd smart_home_energy_monitoring
+cd Smart-Home-Energy-Monitoring-with-Conversational-AI
 ```
 
 ### 2. Create Your Environment File
