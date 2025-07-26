@@ -1,6 +1,6 @@
 # Smart Home Energy Monitoring with Conversational AI
 
-A modern full-stack application for monitoring smart home energy usage, featuring a conversational AI assistant, real-time dashboard, and device management.
+A full-stack application for monitoring smart home energy usage, featuring a conversational AI assistant, real-time dashboard, and device management.
 
 ---
 
